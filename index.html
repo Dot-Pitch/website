@@ -1,267 +1,410 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DotPitch - Mobile & Web App Development</title>
-    <meta name="description" content="Professional mobile and web app development services. We craft exceptional digital experiences from concept to launch.">
-    <meta name="keywords" content="app development, mobile apps, web development, MVP, UI/UX design">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="DotPitch - Mobile & Web App Development">
-    <meta property="og:description" content="We build powerful mobile and web applications that drive results. From concept to launch, we turn your ideas into exceptional digital products.">
-    <meta property="og:url" content="https://dotpitch.xyz">
-    
-    <!-- Preload fonts for better performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
-<body>
-    <header>
-        <nav class="container">
-            <div class="logo">DotPitch</div>
-            <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DotPitch - Mobile & Web App Development</title>
+        <meta
+            name="description"
+            content="Professional mobile and web app development services. We craft exceptional digital experiences from concept to launch."
+        />
+        <meta
+            name="keywords"
+            content="app development, mobile apps, web development, MVP, UI/UX design"
+        />
 
-    <section class="hero">
-        <div class="container">
-            <h1>Crafting Digital Experiences</h1>
-            <p>We build powerful mobile and web applications that drive results. From concept to launch, we turn your ideas into exceptional digital products.</p>
-            <div class="hero-buttons">
-                <a href="#portfolio" class="btn-primary">View Our Work</a>
-                <a href="#contact" class="btn-secondary">Start Your Project</a>
-            </div>
-        </div>
-    </section>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="styles.css" />
 
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-                <p>Comprehensive solutions tailored to your business needs</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
-                            <path d="M12 18h.01"/>
-                        </svg>
-                    </div>
-                    <h3>Mobile Development</h3>
-                    <p>Native iOS and Android apps built with the latest technologies. Creating intuitive, performant experiences that users love.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="20" height="14" x="2" y="3" rx="2"/>
-                            <line x1="8" x2="16" y1="21" y2="21"/>
-                            <line x1="12" x2="12" y1="17" y2="21"/>
-                        </svg>
-                    </div>
-                    <h3>Web Applications</h3>
-                    <p>Modern, responsive web applications using cutting-edge frameworks. Fast, scalable solutions that work seamlessly across devices.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="18" cy="5" r="3"/>
-                            <circle cx="6" cy="12" r="3"/>
-                            <circle cx="18" cy="19" r="3"/>
-                            <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/>
-                            <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/>
-                        </svg>
-                    </div>
-                    <h3>UI/UX Design</h3>
-                    <p>User-centered design that converts. We create beautiful, functional interfaces that provide exceptional user experiences.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
-                        </svg>
-                    </div>
-                    <h3>MVP Development</h3>
-                    <p>Rapid prototyping and MVP development to validate your ideas quickly. Get to market faster with our agile approach.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                        </svg>
-                    </div>
-                    <h3>App Maintenance</h3>
-                    <p>Ongoing support and maintenance to keep your applications running smoothly. Updates, bug fixes, and feature enhancements.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 3v5h5"/>
-                            <path d="M3 21v-5h5"/>
-                            <path d="M21 3v5h-5"/>
-                            <path d="M21 21v-5h-5"/>
-                            <path d="M7 8l10 8"/>
-                            <path d="M7 16l10-8"/>
-                        </svg>
-                    </div>
-                    <h3>Strategic Consulting</h3>
-                    <p>Technology consulting to help you make informed decisions about your digital product roadmap and architecture.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-    <section id="portfolio" class="featured-app">
-        <div class="container">
-            <div class="section-title">
-                <h2>Featured Project</h2>
-                <p>Currently in development - A comprehensive finance tracking solution</p>
+        <!-- Open Graph / Social Media -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="DotPitch - Mobile & Web App Development"
+        />
+        <meta
+            property="og:description"
+            content="We build powerful mobile and web applications that drive results. From concept to launch, we turn your ideas into exceptional digital products."
+        />
+        <meta property="og:url" content="https://dotpitch.xyz" />
+
+        <!-- Preload fonts for better performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <div class="logo">DotPitch</div>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <h1>Crafting Digital Experiences</h1>
+                <p>
+                    We build powerful mobile and web applications that drive
+                    results. From concept to launch, we turn your ideas into
+                    exceptional digital products.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn-primary">View Our Work</a>
+                    <a href="#contact" class="btn-secondary"
+                        >Start Your Project</a
+                    >
+                </div>
             </div>
-            <div class="app-showcase">
-                <div class="app-info">
-                    <h3>Personal Finance Tracker</h3>
-                    <p>A comprehensive financial management app designed to help users take control of their money. Built for both mobile and web platforms with real-time synchronization and intelligent insights.</p>
-                    
-                    <ul class="app-features">
-                        <li>Real-time expense tracking</li>
-                        <li>Budget planning and monitoring</li>
-                        <li>Cross-platform synchronization</li>
-                        <li>Intelligent spending insights</li>
-                        <li>Secure data encryption</li>
-                        <li>Custom category management</li>
-                        <li>Financial goal tracking</li>
-                        <li>Export and reporting tools</li>
-                    </ul>
-                    
-                    <div class="tech-stack">
-                        <p><strong>Technologies:</strong> React Native, Node.js, PostgreSQL, Firebase</p>
-                        <p><strong>Status:</strong> In Development - Beta launching Q3 2025</p>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Services</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect
+                                    width="14"
+                                    height="20"
+                                    x="5"
+                                    y="2"
+                                    rx="2"
+                                    ry="2"
+                                />
+                                <path d="M12 18h.01" />
+                            </svg>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <p>
+                            Native iOS and Android apps built with the latest
+                            technologies.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect
+                                    width="20"
+                                    height="14"
+                                    x="2"
+                                    y="3"
+                                    rx="2"
+                                />
+                                <line x1="8" x2="16" y1="21" y2="21" />
+                                <line x1="12" x2="12" y1="17" y2="21" />
+                            </svg>
+                        </div>
+                        <h3>Web Applications</h3>
+                        <p>
+                            Modern, responsive web applications that work
+                            seamlessly across devices.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="18" cy="5" r="3" />
+                                <circle cx="6" cy="12" r="3" />
+                                <circle cx="18" cy="19" r="3" />
+                                <line
+                                    x1="8.59"
+                                    x2="15.42"
+                                    y1="13.51"
+                                    y2="17.49"
+                                />
+                                <line
+                                    x1="15.41"
+                                    x2="8.59"
+                                    y1="6.51"
+                                    y2="10.49"
+                                />
+                            </svg>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Exceptional User-centered design.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polygon
+                                    points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"
+                                />
+                            </svg>
+                        </div>
+                        <h3>MVP Development</h3>
+                        <p>
+                            Rapid prototyping and MVP development to validate
+                            your ideas quickly.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                                />
+                            </svg>
+                        </div>
+                        <h3>App Maintenance</h3>
+                        <p>Keep your applications running smoothly.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M3 3v5h5" />
+                                <path d="M3 21v-5h5" />
+                                <path d="M21 3v5h-5" />
+                                <path d="M21 21v-5h-5" />
+                                <path d="M7 8l10 8" />
+                                <path d="M7 16l10-8" />
+                            </svg>
+                        </div>
+                        <h3>Strategic Consulting</h3>
+                        <p>
+                            Technology consulting to help you make informed
+                            decisions about your roadmap and architecture.
+                        </p>
                     </div>
                 </div>
-                <div class="app-mockup">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <div class="app-header">
-                                <h4>FinanceTracker</h4>
-                                <span>June 2025</span>
-                            </div>
-                            
-                            <div class="balance-card">
-                                <p class="balance-label">Total Balance</p>
-                                <div class="balance-amount">$4,567.89</div>
-                                <p class="balance-change">+2.3% from last month</p>
-                            </div>
-                            
-                            <h4 class="transactions-header">Recent Transactions</h4>
-                            
-                            <div class="transaction-item">
-                                <div class="transaction-info">
-                                    <h4>Grocery Store</h4>
-                                    <p>Today, 2:30 PM</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="featured-app">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured Project</h2>
+                    <p>
+                        Currently in development - A comprehensive finance
+                        tracking solution
+                    </p>
+                </div>
+                <div class="app-showcase">
+                    <div class="app-info">
+                        <h3>Budgie</h3>
+                        <p>
+                            A comprehensive financial management app designed to
+                            help users take control of their money. Built for
+                            both mobile and web platforms with real-time
+                            synchronization and intelligent insights.
+                        </p>
+
+                        <ul class="app-features">
+                            <li>Real-time expense tracking</li>
+                            <li>Budget planning and monitoring</li>
+                            <li>Cross-platform synchronization</li>
+                            <li>Intelligent spending insights</li>
+                            <li>Secure data encryption</li>
+                            <li>Custom category management</li>
+                            <li>Financial goal tracking</li>
+                            <li>Export and reporting tools</li>
+                        </ul>
+
+                        <div class="tech-stack">
+                            <p>
+                                <strong>Technologies:</strong> React Native,
+                                Node.js, PostgreSQL
+                            </p>
+                            <p>
+                                <strong>Status:</strong> In Development - Beta
+                                launching Q3 2025
+                            </p>
+                        </div>
+                    </div>
+                    <div class="app-mockup">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="app-header">
+                                    <h4>Budgie</h4>
+                                    <span>June 2025</span>
                                 </div>
-                                <div class="transaction-amount negative">-$87.45</div>
-                            </div>
-                            
-                            <div class="transaction-item">
-                                <div class="transaction-info">
-                                    <h4>Salary Deposit</h4>
-                                    <p>Yesterday</p>
+
+                                <div class="balance-card">
+                                    <p class="balance-label">Total Balance</p>
+                                    <div class="balance-amount">$4,567.89</div>
+                                    <p class="balance-change">
+                                        +2.3% from last month
+                                    </p>
                                 </div>
-                                <div class="transaction-amount positive">+$3,200.00</div>
-                            </div>
-                            
-                            <div class="transaction-item">
-                                <div class="transaction-info">
-                                    <h4>Coffee Shop</h4>
-                                    <p>June 1</p>
+
+                                <h4 class="transactions-header">
+                                    Recent Transactions
+                                </h4>
+
+                                <div class="transaction-item">
+                                    <div class="transaction-info">
+                                        <h4>Grocery Store</h4>
+                                        <p>Today, 2:30 PM</p>
+                                    </div>
+                                    <div class="transaction-amount negative">
+                                        -$87.45
+                                    </div>
                                 </div>
-                                <div class="transaction-amount negative">-$12.50</div>
-                            </div>
-                            
-                            <div class="transaction-item">
-                                <div class="transaction-info">
-                                    <h4>Investment Return</h4>
-                                    <p>May 30</p>
+
+                                <div class="transaction-item">
+                                    <div class="transaction-info">
+                                        <h4>Salary Deposit</h4>
+                                        <p>Yesterday</p>
+                                    </div>
+                                    <div class="transaction-amount positive">
+                                        +$3,200.00
+                                    </div>
                                 </div>
-                                <div class="transaction-amount positive">+$145.67</div>
+
+                                <div class="transaction-item">
+                                    <div class="transaction-info">
+                                        <h4>Coffee Shop</h4>
+                                        <p>June 1</p>
+                                    </div>
+                                    <div class="transaction-amount negative">
+                                        -$12.50
+                                    </div>
+                                </div>
+
+                                <div class="transaction-item">
+                                    <div class="transaction-info">
+                                        <h4>Investment Return</h4>
+                                        <p>May 30</p>
+                                    </div>
+                                    <div class="transaction-amount positive">
+                                        +$145.67
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="process" class="process">
-        <div class="container">
-            <div class="section-title">
-                <h2>How We Work</h2>
-                <p>Our proven process for delivering exceptional digital products</p>
-            </div>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h4>Discovery & Strategy</h4>
-                    <p>We start by understanding your goals, target audience, and technical requirements to create a comprehensive project roadmap.</p>
+        <section id="process" class="process">
+            <div class="container">
+                <div class="section-title">
+                    <h2>How We Work</h2>
                 </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h4>Design & Prototype</h4>
-                    <p>Our design team creates intuitive user experiences and interactive prototypes that bring your vision to life.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h4>Develop & Launch</h4>
-                    <p>We build your application using industry best practices, conduct thorough testing, and support you through launch.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Ready to Start Your Project?</h2>
-            <p>Let's discuss how we can bring your app idea to life</p>
-            <a href="mailto:hello@dotpitch.xyz" class="contact-cta">Get In Touch</a>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h4>Email</h4>
-                    <a href="mailto:hello@dotpitch.xyz">hello@dotpitch.xyz</a>
-                </div>
-                <div class="contact-item">
-                    <h4>Phone</h4>
-                    <a href="tel:+1234567890">+1 (234) 567-8900</a>
-                </div>
-                <div class="contact-item">
-                    <h4>Response Time</h4>
-                    <p>Within 24 hours</p>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Discovery & Strategy</h4>
+                        <p>
+                            We start by understanding your goals, target
+                            audience, and technical requirements to create a
+                            comprehensive project roadmap.
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Design & Prototype</h4>
+                        <p>
+                            Our design team creates intuitive user experiences
+                            and interactive prototypes that bring your vision to
+                            life.
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Develop & Launch</h4>
+                        <p>
+                            We build your application using industry best
+                            practices, conduct thorough testing, and support you
+                            through launch.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 DotPitch. All rights reserved.</p>
-        </div>
-    </footer>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Ready to Start?</h2>
 
-    <!-- JavaScript -->
-    <script src="scripts.js"></script>
-</body>
+                <a href="mailto:hello@dotpitch.xyz" class="contact-cta"
+                    >Get In Touch</a
+                >
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <a href="mailto:hello@dotpitch.xyz"
+                            >hello@dotpitch.xyz</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 DotPitch. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="scripts.js"></script>
+    </body>
 </html>
