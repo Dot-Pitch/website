@@ -1,0 +1,331 @@
+/* Portfolio Specific Styles */
+
+/* Navigation active state */
+.nav-links .active {
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Portfolio Hero */
+.portfolio-hero {
+    padding: 12rem 0 6rem;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+}
+
+.portfolio-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    color: #1a202c;
+    letter-spacing: -0.03em;
+}
+
+.portfolio-hero p {
+    font-size: 1.25rem;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Portfolio Filter */
+.portfolio-filter {
+    padding: 4rem 0 2rem;
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid #e2e8f0;
+    color: #718096;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #2d3748;
+    color: white;
+    border-color: #2d3748;
+}
+
+/* Portfolio Grid */
+.portfolio-grid-section {
+    padding: 4rem 0 8rem;
+    background: white;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.portfolio-item {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.portfolio-item.filtered-out {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+.portfolio-item.featured {
+    grid-column: span 2;
+}
+
+.portfolio-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    background: #f7fafc;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(45, 55, 72, 0.9);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-overlay-content {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.portfolio-overlay-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.portfolio-overlay-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.view-project {
+    display: inline-block;
+    background: white;
+    color: #2d3748;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.view-project:hover {
+    background: #f7fafc;
+    transform: translateY(-2px);
+}
+
+.portfolio-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+}
+
+.portfolio-info p {
+    color: #718096;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.featured-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Portfolio CTA */
+.portfolio-cta {
+    padding: 6rem 0;
+    background: #f7fafc;
+    text-align: center;
+}
+
+.portfolio-cta h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1a202c;
+    letter-spacing: -0.02em;
+}
+
+.portfolio-cta p {
+    font-size: 1.125rem;
+    color: #718096;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .portfolio-item.featured {
+        grid-column: span 1;
+    }
+    
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .portfolio-overlay-content {
+        padding: 1.5rem;
+    }
+    
+    .portfolio-overlay-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    .portfolio-cta h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-hero {
+        padding: 10rem 0 4rem;
+    }
+    
+    .portfolio-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .portfolio-filter {
+        padding: 2rem 0 1rem;
+    }
+    
+    .portfolio-grid-section {
+        padding: 2rem 0 4rem;
+    }
+}
+
+/* Loading states for images */
+.portfolio-image img {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+.portfolio-image img[src] {
+    background: none;
+    animation: none;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio-item {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Focus states for accessibility */
+.filter-btn:focus,
+.view-project:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .portfolio-overlay,
+    .filter-buttons,
+    .portfolio-cta {
+        display: none;
+    }
+    
+    .portfolio-image {
+        break-inside: avoid;
+    }
+}

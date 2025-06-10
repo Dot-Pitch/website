@@ -3,83 +3,249 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>DotPitch - Mobile & Web App Development</title>
+        <title>Portfolio - DotPitch</title>
         <meta
             name="description"
-            content="Professional mobile and web app development services. We craft exceptional digital experiences from concept to launch."
-        />
-        <meta
-            name="keywords"
-            content="app development, mobile apps, web development, MVP, UI/UX design"
+            content="Explore our portfolio of mobile apps, logos, concept art, and digital design work. Quality craftsmanship across multiple creative disciplines."
         />
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="portfolio-styles.css" />
 
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-
-        <!-- Open Graph / Social Media -->
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:title"
-            content="DotPitch - Mobile & Web App Development"
-        />
-        <meta
-            property="og:description"
-            content="We build powerful mobile and web applications that drive results. From concept to launch, we turn your ideas into exceptional digital products."
-        />
-        <meta property="og:url" content="https://dotpitch.xyz" />
-
-        <!-- Preload fonts for better performance -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     </head>
-    <ody>
+    <body>
         <header>
             <nav class="container">
                 <div class="logo">DotPitch</div>
                 <ul class="nav-links">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#process">Process</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#featured">Featured</a></li>
+                    <li><a href="../index.html#process">Process</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
                 </ul>
-                <a href="#contact" class="cta-button">Get Started</a>
             </nav>
         </header>
-        <body>
-            <section class="hero">
-                <div class="container">
-                    <h1>Selected Portfolio</h1>
-                    <p>
-                        Lorem Ipsum Sit Amet Dolar. Lorem Ipsum Sit Amet Dolar. Lorem Ipsum Sit Amet Dolar. Lorem Ipsum Sit Amet Dolar.
-                    </p>
 
+        <!-- <section class="portfolio-hero">
+            <div class="container">
+                <h1>Our Portfolio</h1>
+                <p>
+                    A collection of our finest work across mobile applications,
+                    digital design, and creative technology.
+                </p>
+            </div>
+        </section> -->
+
+        <section class="portfolio-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        All Work
+                    </button>
+                    <button class="filter-btn" data-filter="mobile">
+                        Mobile Apps
+                    </button>
+                    <button class="filter-btn" data-filter="logos">
+                        Logos & Branding
+                    </button>
+                    <button class="filter-btn" data-filter="concept">
+                        Concept Art
+                    </button>
+                    <button class="filter-btn" data-filter="generative">
+                        Generative Art
+                    </button>
                 </div>
-            </section>
-            <section id="contact" class="contact">
-                <div class="container">
-                    <h2>Ready to Start?</h2>
+            </div>
+        </section>
 
-                    <a href="mailto:hello@dotpitch.xyz" class="contact-cta"
-                        >Get In Touch</a
-                    >
+        <section class="portfolio-grid-section">
+            <div class="container">
+                <div class="portfolio-grid">
+                    <!-- Mobile App Icons -->
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <img
+                                src="images/mobile-app-icons.png"
+                                alt="Mobile App Icons"
+                                loading="lazy"
+                            />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Mobile App Icons</h3>
+                                    <p>
+                                        Icon design for iOS and Android
+                                        applications
+                                    </p>
+                                    <a href="#" class="view-project"
+                                        >View Project</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Mobile App Icons</h3>
+                            <p>iOS & Android</p>
+                        </div>
+                    </div>
 
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <h4>Email</h4>
-                            <a href="mailto:hello@dotpitch.xyz"
-                                >hello@dotpitch.xyz</a
-                            >
+                    <!-- Artist App Logos -->
+                    <div class="portfolio-item" data-category="logos">
+                        <div class="portfolio-image">
+                            <img
+                                src="images/matisyahu-logo.jpg"
+                                alt="Matisyahu Artist App"
+                                loading="lazy"
+                            />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Matisyahu Artist App</h3>
+                                    <p>
+                                        Brand identity and logo design for music
+                                        artist mobile application
+                                    </p>
+                                    <a href="#" class="view-project"
+                                        >View Project</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Artist App Logos</h3>
+                            <p>Music & Entertainment</p>
+                        </div>
+                    </div>
+                    <!-- Generative Art -->
+                    <div class="portfolio-item" data-category="generative">
+                        <div class="portfolio-image">
+                            <img
+                                src="images/generative-art.png"
+                                alt="Generative Art"
+                                loading="lazy"
+                            />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Generative Art</h3>
+                                    <p>
+                                        Algorithmic art and computational
+                                        creativity
+                                    </p>
+                                    <a href="#" class="view-project"
+                                        >View Project</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Generative Art</h3>
+                            <p>Digital Art</p>
+                        </div>
+                    </div>
+
+                    <!-- App Concept Art -->
+                    <div class="portfolio-item" data-category="concept">
+                        <div class="portfolio-image">
+                            <img
+                                src="images/app-concept-ui.png"
+                                alt="App Concept Art"
+                                loading="lazy"
+                            />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>App Concept Art</h3>
+                                    <p>
+                                        UI/UX concepts and interface design
+                                        exploration
+                                    </p>
+                                    <a href="#" class="view-project"
+                                        >View Project</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>App Concept Art</h3>
+                            <p>UI/UX Design</p>
+                        </div>
+                    </div>
+
+                    <!-- Dot Pitch Glyph -->
+                    <div class="portfolio-item" data-category="logos">
+                        <div class="portfolio-image">
+                            <img
+                                src="images/dotpitch-glyph.png"
+                                alt="Dot Pitch Glyph"
+                                loading="lazy"
+                            />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Dot Pitch Glyph</h3>
+                                    <p>
+                                        Brand identity and logo design for
+                                        DotPitch
+                                    </p>
+                                    <a href="#" class="view-project"
+                                        >View Project</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Dot Pitch Glyph</h3>
+                            <p>Brand Identity</p>
+                        </div>
+                    </div>
+
+                    <!-- Budgie App -->
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <img
+                                src="images/finance-tracker-mockup.png"
+                                alt="Finance Tracker App"
+                                loading="lazy"
+                            />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Finance Tracker App</h3>
+                                    <p>
+                                        Comprehensive personal finance
+                                        management application
+                                    </p>
+                                    <a href="#" class="view-project"
+                                        >View Project</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Budgie App</h3>
+                            <p>Mobile & Web App</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <footer>
-                <div class="container">
-                    <p>&copy; 2025 DotPitch. All rights reserved.</p>
-                </div>
-            </footer>
-        </body>
+            </div>
+        </section>
+
+        <section class="portfolio-cta">
+            <div class="container">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's create something amazing together</p>
+                <a href="index.html#contact" class="btn-primary"
+                    >Work With Us</a
+                >
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 DotPitch. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="scripts.js"></script>
+        <script src="portfolio-scripts.js"></script>
+    </body>
 </html>
