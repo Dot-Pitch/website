@@ -1,10 +1,12 @@
 /* Project Page Specific Styles */
+/* This file should replace both project-styles.css and fixme.css */
 
-/** *.breadcrumb */
-/* Breadcrumb */
+/* =================================
+   BREADCRUMB NAVIGATION
+   ================================= */
 .breadcrumb {
     padding: 2rem 0 0 0;
-    background: #edf2f7;
+    background: #f7fafc;
     border-bottom: 1px solid #e2e8f0;
 }
 
@@ -32,26 +34,16 @@
     font-weight: 300;
     margin: 0 0.25rem;
 }
+
 .breadcrumb-nav .current {
     color: #4a5568;
     font-weight: 500;
     white-space: nowrap;
 }
 
-@media (max-width: 768px) {
-    .breadcrumb {
-        padding: 2.5rem 0 0 0;
-    }
-
-    .breadcrumb-nav {
-        font-size: 0.8rem;
-        gap: 0.4rem;
-        padding: 0.8rem 0;
-    }
-}
-/** *.breadcrumb */
-
-/* Project Hero */
+/* =================================
+   PROJECT HERO SECTION
+   ================================= */
 .project-hero {
     padding: 4rem 0 6rem;
     background: #f7fafc;
@@ -61,11 +53,32 @@
     max-width: 800px;
 }
 
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #1a202c;
+    letter-spacing: -0.03em;
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+}
+
 .project-meta {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .project-category {
@@ -83,15 +96,6 @@
     color: #718096;
     font-size: 0.9rem;
     font-weight: 500;
-}
-
-.project-hero h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
-    color: #1a202c;
-    letter-spacing: -0.03em;
 }
 
 .project-subtitle {
@@ -122,7 +126,9 @@
     margin: 0;
 }
 
-/* Project Gallery */
+/* =================================
+   PROJECT GALLERY
+   ================================= */
 .project-gallery {
     padding: 6rem 0;
     background: white;
@@ -141,9 +147,8 @@
     height: auto;
     border-radius: 12px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: zoom-in;
 }
 
 .gallery-item:hover img {
@@ -171,7 +176,9 @@
     margin: 0 auto;
 }
 
-/* Project Sections */
+/* =================================
+   PROJECT SECTIONS
+   ================================= */
 .project-section {
     margin: 6rem 0;
 }
@@ -191,7 +198,9 @@
     max-width: 700px;
 }
 
-/* Gallery Grid */
+/* =================================
+   GALLERY GRID LAYOUTS
+   ================================= */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -199,7 +208,6 @@
     margin: 4rem 0;
 }
 
-/* Principles Grid */
 .principles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -207,6 +215,16 @@
     margin-top: 3rem;
 }
 
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+/* =================================
+   PRINCIPLE ITEMS
+   ================================= */
 .principle-item {
     text-align: center;
 }
@@ -237,14 +255,9 @@
     line-height: 1.6;
 }
 
-/* Technical Specs */
-.specs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 3rem;
-    margin-top: 3rem;
-}
-
+/* =================================
+   TECHNICAL SPECIFICATIONS
+   ================================= */
 .spec-category h4 {
     font-size: 1.1rem;
     font-weight: 600;
@@ -271,7 +284,9 @@
     border-bottom: none;
 }
 
-/* Project Navigation */
+/* =================================
+   PROJECT NAVIGATION
+   ================================= */
 .project-navigation {
     padding: 4rem 0;
     background: #f7fafc;
@@ -284,6 +299,16 @@
     align-items: center;
 }
 
+.nav-center {
+    text-align: center;
+}
+
+.nav-counter {
+    color: #718096;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 .nav-link {
     display: flex;
     flex-direction: column;
@@ -292,6 +317,7 @@
     transition: all 0.3s ease;
     padding: 1rem;
     border-radius: 8px;
+    min-width: 140px;
 }
 
 .nav-link:hover {
@@ -321,7 +347,9 @@
     color: #2d3748;
 }
 
-/* Related Projects */
+/* =================================
+   RELATED PROJECTS
+   ================================= */
 .related-projects {
     padding: 6rem 0;
     background: white;
@@ -384,7 +412,9 @@
     margin: 0;
 }
 
-/* Project CTA */
+/* =================================
+   PROJECT CTA SECTION
+   ================================= */
 .project-cta {
     padding: 6rem 0;
     background: #2d3748;
@@ -415,18 +445,37 @@
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
+/* =================================
+   RESPONSIVE DESIGN
+   ================================= */
 @media (max-width: 768px) {
     .breadcrumb {
-        padding: 5rem 0 1rem;
+        padding: 2.5rem 0 0 0;
+    }
+
+    .breadcrumb-nav {
+        font-size: 0.8rem;
+        gap: 0.4rem;
+        padding: 0.8rem 0;
     }
 
     .project-hero {
         padding: 3rem 0 4rem;
     }
 
-    .project-hero h1 {
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .project-title {
         font-size: 2.5rem;
+    }
+
+    .project-meta {
+        order: -1;
+        white-space: normal;
     }
 
     .project-details {
@@ -452,16 +501,18 @@
     .nav-links-project {
         flex-direction: column;
         gap: 2rem;
+        text-align: center;
     }
 
     .nav-link {
         width: 100%;
-        text-align: center;
+        align-items: center !important;
+        min-width: auto;
     }
 
-    .nav-link.prev,
-    .nav-link.next {
-        align-items: center;
+    .nav-center {
+        order: -1;
+        margin-bottom: 1rem;
     }
 
     .related-grid {
@@ -498,7 +549,9 @@
     }
 }
 
-/* Loading Animation */
+/* =================================
+   ANIMATIONS
+   ================================= */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -516,7 +569,9 @@
     animation: fadeInUp 0.6s ease forwards;
 }
 
-/* Print Styles */
+/* =================================
+   PRINT STYLES
+   ================================= */
 @media print {
     .project-navigation,
     .related-projects,
